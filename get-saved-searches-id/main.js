@@ -16,7 +16,9 @@
         })
         .promise()
         .then(data => {
-            fs.appendFile("data.json", JSON.stringify(data.Item) + ",", (error) => {
+
+          if (data.Item !== undefined) {
+            fs.appendFile("engagement-deleted.json", JSON.stringify(data.Item) + ",", (error) => {
                 if (error) {
                   console.error(error);
                   throw error;
@@ -25,6 +27,17 @@
               if (data.Item === undefined) {
                 console.log(`${a.id} undefined` );
               }            
+
+          }       
+          else {
+              console.log(`${a.id} undefined` );
+              fs.appendFile("engagement-deleted-undefined.json", JSON.stringify(a.id) + ",", (error) => {
+                if (error) {
+                  console.error(error);
+                  throw error;
+                }
+              });
+          }
         })
         .catch(console.error)
     });
