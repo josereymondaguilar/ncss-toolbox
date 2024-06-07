@@ -1,5 +1,9 @@
 const queryList = [
+<<<<<<< HEAD
 { id: "5be85535-9aeb-46bb-8b24-154288bb18f3"},
+=======
+{ id: "e40c6132-b274-11e9-a2a9-eb8351d121b7"},
+>>>>>>> a1f9c9f (master branch updates)
 { id: "daca9ccd-3498-4a83-8505-37b49b12467c"},
 { id: "d55ebf43-c6a9-4415-a348-afd1b30d4771"},
 ];
