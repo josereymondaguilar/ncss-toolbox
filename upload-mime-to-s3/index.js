@@ -6,7 +6,7 @@ const cron = require("node-cron");
 const s3 = new AWS.S3({
   region: "ap-southeast-1", // Replace with your AWS region
   accessKeyId: "ASIAXQ45VGRRTAHFWQHI", // Replace with your AWS Access Key ID
-  secretAccessKey: "kev7oWT9q5PBYkPQH5CBpnxiuJKU79c0qEKdmWga", // Replace with your AWS Secret Access Key
+  secretAccessKey: "TEST", // Replace with your AWS Secret Access Key
 });
 
 let counter = 0
